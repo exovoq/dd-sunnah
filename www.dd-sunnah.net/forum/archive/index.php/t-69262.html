@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
+	<meta name="keywords" content=" كيف تعالج جهازك بسبب spy يقطع الإتصال ويجبرك على إعادة التشغيل, شبكة الدفاع عن السنة" />
+	<meta name="description" content="[الأرشيف]  كيف تعالج جهازك بسبب spy يقطع الإتصال ويجبرك على إعادة التشغيل منتدى الإنترنت والحاسب الآلي" />
+	
+	<title> كيف تعالج جهازك بسبب spy يقطع الإتصال ويجبرك على إعادة التشغيل [الأرشيف]  - شبكة الدفاع عن السنة</title>
+	<link rel="stylesheet" type="text/css" href="https://www.dd-sunnah.net/forum/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.dd-sunnah.net/forum/archive/index.php">شبكة الدفاع عن السنة</a> &gt; <a href="https://www.dd-sunnah.net/forum/archive/index.php/f-76.html">المنتدى التقني</a> &gt; <a href="https://www.dd-sunnah.net/forum/archive/index.php/f-16.html">منتدى الإنترنت والحاسب الآلي</a> &gt;  كيف تعالج جهازك بسبب spy يقطع الإتصال ويجبرك على إعادة التشغيل</div>
+<hr />
+<div class="pda"><a href="https://www.dd-sunnah.net/forum/archive/index.php/t-69262.html?pda=1" rel="nofollow">المساعد الشخصي الرقمي</a></div>
+<p class="largefont">مشاهدة النسخة كاملة : <a href="https://www.dd-sunnah.net/forum/showthread.php?t=69262">كيف تعالج جهازك بسبب spy يقطع الإتصال ويجبرك على إعادة التشغيل</a></p>
+<hr />
+
+<div class="post"><div class="posttop"><div class="username">صهيب1</div><div class="date">14-01-08, 06:46 PM</div></div><div class="posttext">كثيرا ما يتعرض الجهازللإختراق رغم الحماية وهذه الإختراقات كثيرة ومتعددة وسأقف عند حالة معينة كثيرا ما سبب للكثير مشاكل تدفعهم إلى فرمتة أجهزتهم وهو أمر قد لا يعطي نتيجة إذا الصق العنصر الدخيل بأحد البرامج في القرص<br />
+D<br />
+وهو ما يسمى<br />
+Generic Host Process for Win32 Service<br />
+والذي يترتب عنه مباشرة توقف الإتصال وإدادة تشغيل اوتوماتيكية للجهاز<br />
+أرجو أن أقدم فيما يلي بعض الحلول التي يمكن أن تساعد على تجاوز المشكلة دون اللجوء إلى الفرمتة<br />
+1 –<br />
+Run&amp; regedit<br />
+أ - افتح<br />
+HKEY_LOCAL_MACHINE &gt; SYSTEM &gt; CurrentControlSet &gt; Services &gt; Browser &gt; Parameters<br />
+ب – ابحث عن الملف<br />
+IsDomainMaste<br />
+ضع<br />
+Data: False<br />
+أعد تشغيل الجهاز<br />
+2 -<br />
+ثم اكتب Run<br />
+Cmd<br />
+اكتب :<br />
+Netsh<br />
+ثم<br />
+Winsock<br />
+اضغط على ok<br />
+ثم اكتب reset<br />
+اعد تشغيل الجهاز<br />
+3 – حمل البرنامج<br />
+LSPFIX<br />
+http://cexx.org/lspfix.htm<br />
+اتبع الخطوات المطلوبة<br />
+4 – ادخل موقع ميكروسوفت وحمل باتش التحديث<br />
+http://support.microsoft.com/kb/894391<br />
+وكذلك الملف :<br />
+Kb921883<br />
+يمكن تحميلها من هنا<br />
+http://www.microsoft.com/downloads/d...displaylang=de<br />
+<br />
+5 – اتباع المراحل التالية :<br />
+Start &amp;run<br />
+اكتب:<br />
+net stop wuauserv<br />
+على سطح المكتب اضغط مرتين على<br />
+My computer<br />
+delete the drive:\WuTemp folder<br />
+هذا الدرايفريظهر عادة عند تحديث الوندوز أو حرق قرص &quot;اسطوانة&quot;<br />
+Delete the drive:\******s\System32\Catroot2 folder<br />
+افتح:<br />
+drive:\******s folder<br />
+وأعد تسمية<br />
+the SoftwareDistribution folder<br />
+إلى<br />
+SoftwareDistributionOLD<br />
+افتح<br />
+the drive:\******s\system32 folder<br />
+وأعد تسمية الملفات التالية إلى: بكل بساطة أضف كلمة<br />
+Old<br />
+لها جميعا<br />
+1. Wu***.dll file إلى Wu***.dll.old.<br />
+2. Wuapi.dll fileإلى Wuapi.dll.old.<br />
+3. Wuauclt.exe file إلى Wuauclt.exe.old.<br />
+4. Wuaucpl.cpl file إلى Wuaucpl.cpl.old.<br />
+5. Wuaueng1.dll fileإلى Wuaueng1.dll.old.<br />
+6. Wuaueng.dll file إلى Wuaueng.dll.old.<br />
+7. Wuauserv.dll fileإلى Wuauserv.dll.old.<br />
+8. Wucltui.dll file إلى Wucltui.dll.old.<br />
+9. Wups2.dll file إلى Wups2.dll.old.<br />
+10. Wups.dll file إلى Wups.dll.old.<br />
+وأخيرا أعد تشغيل الجهاز<br />
+<br />
+<br />
+نقوم بتحميل برنامج<br />
+Regcure v1.5.0.0<br />
+ولمن يريد بإمكني مده بالباتش النهائي<br />
+يرجى كذلك للحماية الدائمة تحميل<br />
+Pc tools spyware doctor<br />
+عندي باتش<br />
+v5.1.0.272<br />
+وكذلك 5.5.0.78</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">Clerk</div><div class="date">21-01-08, 04:42 AM</div></div><div class="posttext">جزاك الله خيرا</div></div><hr />
+
+
+<div class="post"><div class="posttop"><div class="username">برق الدرعية</div><div class="date">17-07-08, 02:35 AM</div></div><div class="posttext">جزاك الله الف خير اخوي ،، ما قصرت معلومات وافية ان شاء الله<br />
+ <br />
+:)</div></div><hr />
+
+
+<div id="copyright">vBulletin&reg; v3.8.7, Copyright &copy;2000-2023, TranZ by Almuhajir</div>
+</div>
+</body>
+</html>

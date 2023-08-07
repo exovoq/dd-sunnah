@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" lang="ar">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
+	<meta name="keywords" content=" شرح التخلص من الفيروسات على الايميل موضوع مهم لأن أكثر الايميلات رايحة فيها, شبكة الدفاع عن السنة" />
+	<meta name="description" content="[الأرشيف]  شرح التخلص من الفيروسات على الايميل موضوع مهم لأن أكثر الايميلات رايحة فيها منتدى الإنترنت والحاسب الآلي" />
+	
+	<title> شرح التخلص من الفيروسات على الايميل موضوع مهم لأن أكثر الايميلات رايحة فيها [الأرشيف]  - شبكة الدفاع عن السنة</title>
+	<link rel="stylesheet" type="text/css" href="https://www.dd-sunnah.net/forum/archive/archive.css" />
+</head>
+<body>
+<div class="pagebody">
+<div id="navbar"><a href="https://www.dd-sunnah.net/forum/archive/index.php">شبكة الدفاع عن السنة</a> &gt; <a href="https://www.dd-sunnah.net/forum/archive/index.php/f-76.html">المنتدى التقني</a> &gt; <a href="https://www.dd-sunnah.net/forum/archive/index.php/f-16.html">منتدى الإنترنت والحاسب الآلي</a> &gt;  شرح التخلص من الفيروسات على الايميل موضوع مهم لأن أكثر الايميلات رايحة فيها</div>
+<hr />
+<div class="pda"><a href="https://www.dd-sunnah.net/forum/archive/index.php/t-29662.html?pda=1" rel="nofollow">المساعد الشخصي الرقمي</a></div>
+<p class="largefont">مشاهدة النسخة كاملة : <a href="https://www.dd-sunnah.net/forum/showthread.php?t=29662">شرح التخلص من الفيروسات على الايميل موضوع مهم لأن أكثر الايميلات رايحة فيها</a></p>
+<hr />
+
+<div class="post"><div class="posttop"><div class="username">ابومعاوية السلفى</div><div class="date">22-04-04, 04:12 PM</div></div><div class="posttext">السلام عليكم ورحمة الله  وبركاته<br />
+ من زمان وانا ودي اعرف طريقة لي الحل النهائي مع الفيروسات <br />
+<br />
+المزعجة على الايميل وبعد البحث والتحري لقيت طريقة تمام وضبطت معي وصار ايميلي <br />
+<br />
+عال عال ولا فيه اي مشاكل ولا رسايل مزعجة باسماء وهمية <br />
+<br />
+وهذا اول شي شرح بالتفصيل الممل عن الفيروس وكيفية انتشارة <br />
+<br />
+في الآونة الأخيرة بدأ انتشار الفايروس الذي يعتبر من أكثر الفايروسات انتشارا<br />
+<br />
+(<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c493f7f6ea8aa1b0b7afbdea9484a9a9">[email&#160;protected]</a>)<br />
+<br />
+وأكاد أحدد أن جميع الفايروسات التي تصلكم هي من هذا النوع W32.NetskyV <br />
+<br />
+بعد أن يتم تشغيل الملف الماصب بالفايروس يقوم بالأتي (لاحظ كيف يتم تشغيله) :<br />
+<br />
+<br />
+ملاحظة : هذا أهم ما يقوم به الفايروس وليس جميع مايقوم به ، حاولت الاختصار لتتضح الصورة<br />
+<br />
+<br />
+1- يقوم بنسخ نفسه إلى :<br />
+C:\WINDOWS\FVProtect.exe<br />
+طبعا WINDOWS تختلف حسب مجلد الويندوز لديك ، ولاحظ اسم الفايروس يجعلك تعتقد أنه ملف للحماية أو شيء من هذا<br />
+<br />
+<br />
+2- يضيف القيمة التالية للرجستري :<br />
+&quot;Norton Antivirus AV&quot;=&quot;C:\WINDOWS\FVProtect.exe&quot;في هذا العنوان<br />
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Curr entVersion\Run<br />
+<br />
+أي أن الفايروس سوف يعمل في حال تم تشغيل الجهاز ، أيضا لاحظ التمويه من الفايروس ، أختار اسم Norton Antivirus AV ليكون اسما للقيمة ، فعندما تشاهده في الرجستري تعتقد أنه من ملفات النورتون<br />
+<br />
+3- يقوم بالبحث عن المجلدات التي تحتوي اسمائها على النصوص التالية :<br />
+<br />
+<br />
+bear <br />
+<br />
+<br />
+donkey <br />
+<br />
+<br />
+download <br />
+<br />
+<br />
+ftp <br />
+<br />
+<br />
+htdocs <br />
+<br />
+<br />
+http <br />
+<br />
+<br />
+icq <br />
+<br />
+<br />
+kazaa <br />
+<br />
+<br />
+lime <br />
+<br />
+<br />
+morpheus <br />
+<br />
+<br />
+mule <br />
+<br />
+<br />
+my shared folder <br />
+<br />
+<br />
+shar <br />
+<br />
+<br />
+shared files <br />
+<br />
+<br />
+upload<br />
+<br />
+وبعد ذلك يقوم بنسخ الفايروس لتلك المجلدات باحد الاسماء التالية :<br />
+<br />
+<br />
+&quot;1001 Sex and more.rtf.exe&quot; <br />
+&quot;3D Studio Max 6 3dsmax.exe&quot; <br />
+&quot;ACDSee 10.exe&quot; <br />
+&quot;Adobe Photoshop 10 crack.exe&quot; <br />
+&quot;Adobe Photoshop 10 full.exe&quot; <br />
+&quot;Adobe Premiere 10.exe&quot; <br />
+&quot;Ahead Nero 8.exe&quot; <br />
+&quot;Altkins Diet.doc.exe&quot; <br />
+&quot;American Idol.doc.exe&quot; <br />
+&quot;Arnold Schwarzenegger.jpg.exe&quot; <br />
+&quot;Best Matrix Screensaver new.scr&quot; <br />
+&quot;Britney sex xxx.jpg.exe&quot; <br />
+&quot;Britney Spears and Eminem porn.jpg.exe&quot; <br />
+&quot;Britney Spears blowjob.jpg.exe&quot; <br />
+&quot;Britney Spears cumshot.jpg.exe&quot; <br />
+&quot;Britney Spears ****************.jpg.exe&quot; <br />
+&quot;Britney Spears full album.mp3.exe&quot; <br />
+&quot;Britney Spears porn.jpg.exe&quot; <br />
+&quot;Britney Spears Sexy archive.doc.exe&quot; <br />
+&quot;Britney Spears Song text archive.doc.ex&quot;... <br />
+&quot;Britney Spears.jpg.exe&quot; <br />
+&quot;Britney Spears.mp3.exe&quot; <br />
+&quot;Clone DVD 6.exe&quot; <br />
+&quot;Cloning.doc.exe&quot; <br />
+&quot;Cracks &amp; Warez Archiv.exe&quot; <br />
+&quot;Dark Angels new.pif&quot; <br />
+&quot;Dictionary English 2004 - France.doc.ex&quot;... <br />
+&quot;DivX 8.0 final.exe&quot; <br />
+&quot;Doom 3 release 2.exe&quot; <br />
+&quot;E-Book Archive2.rtf.exe&quot; <br />
+&quot;Eminem blowjob.jpg.exe&quot; <br />
+&quot;Eminem full album.mp3.exe&quot; <br />
+&quot;Eminem Poster.jpg.exe&quot; <br />
+&quot;Eminem sex xxx.jpg.exe&quot; <br />
+&quot;Eminem Sexy archive.doc.exe&quot; <br />
+&quot;Eminem Song text archive.doc.exe&quot; <br />
+&quot;Eminem Spears porn.jpg.exe&quot; <br />
+&quot;Eminem.mp3.exe&quot; <br />
+&quot;Full album all.mp3.pif&quot; <br />
+&quot;Gimp 1.8 Full with Key.exe&quot; <br />
+&quot;Harry Potter 1-6 book.txt.exe&quot; <br />
+&quot;Harry Potter 5.mpg.exe&quot; <br />
+&quot;Harry Potter all e.book.doc.exe&quot; <br />
+&quot;Harry Potter e book.doc.exe&quot; <br />
+&quot;Harry Potter game.exe&quot; <br />
+&quot;Harry Potter.doc.exe&quot; <br />
+&quot;How to hack new.doc.exe&quot; <br />
+&quot;Internet Explorer 9 setup.exe&quot; <br />
+&quot;Kazaa Lite 4.0 new.exe&quot; <br />
+&quot;Kazaa new.exe&quot; <br />
+&quot;Keygen 4 all new.exe&quot; <br />
+&quot;Learn Programming 2004.doc.exe&quot; <br />
+&quot;Lightwave 9 Update.exe&quot; <br />
+&quot;Magix Video Deluxe 5 beta.exe&quot; <br />
+&quot;Matrix.mpg.exe&quot; <br />
+&quot;Microsoft Office 2003 Crack best.exe&quot; <br />
+&quot;Microsoft WinXP Crack full.exe&quot; <br />
+&quot;MS Service Pack 6.exe&quot; <br />
+&quot;netsky source code.scr&quot; <br />
+&quot;Norton Antivirus 2005 beta.exe&quot; <br />
+&quot;Opera 11.exe&quot; <br />
+&quot;Partitionsmagic 10 beta.exe&quot; <br />
+&quot;Porno Screensaver britney.scr&quot; <br />
+&quot;RFC compilation.doc.exe&quot; <br />
+&quot;Ringtones.doc.exe&quot; <br />
+&quot;Ringtones.mp3.exe&quot; <br />
+&quot;Saddam Hussein.jpg.exe&quot; <br />
+&quot;Screensaver2.scr&quot; <br />
+&quot;Serials edition.txt.exe&quot; <br />
+&quot;Smashing the stack full.rtf.exe&quot; <br />
+&quot;Star Office 9.exe&quot; <br />
+&quot;Teen Porn 15.jpg.pif&quot; <br />
+&quot;The Sims 4 beta.exe&quot; <br />
+&quot;Ulead Keygen 2004.exe&quot; <br />
+&quot;Visual Studio Net Crack all.exe&quot; <br />
+&quot;Win Longhorn re.exe&quot; <br />
+&quot;WinAmp 13 full.exe&quot; <br />
+&quot;Windows 2000 Sourcecode.doc.exe&quot; <br />
+&quot;Windows 2003 crack.exe&quot; <br />
+&quot;Windows XP crack.exe&quot; <br />
+&quot;WinXP eBook newest.doc.exe&quot; <br />
+&quot;XXX hardcore pics.jpg.exe&quot;<br />
+وسبب هذه العملية لكي ينشر نفسه بشكل أكبر<br />
+<br />
+4- يقوم بجلب عنواوين البريد الإلكتروني من الملفات الموجودة في محركات الأقراص من (C حتى Z) والتي تكون بهذا الامتداد<br />
+<br />
+<br />
+.adb <br />
+.asp <br />
+.cgi <br />
+.dbx <br />
+.dhtm <br />
+.doc <br />
+.eml <br />
+.htm <br />
+.html <br />
+.jsp <br />
+.msg <br />
+.oft <br />
+.php <br />
+.pl <br />
+.rtf <br />
+.sht <br />
+.shtm <br />
+.tbb <br />
+.txt <br />
+.uin <br />
+.vbs <br />
+.wab <br />
+.wsh <br />
+.xml<br />
+<br />
+أي أنه سوف يقوم بفتح جميع ملفات جهازك والتي امتدادها واحد من الامتدادات السابقة ، ويقوم بقرائة محتوى الملف بحثاً عن بريد الكتروني وفي حال حصل عليه يقوم بتخزينه عنده. لاحظ الكم الهائل من العناوين الإلكترونية التي سوف يحصل عليها ، فهو يفتح ملفات الانترنت المؤقتة ايضا وغالبا ماتحتوي على عناوين الكترونية.<br />
+<br />
+5- بإستخدام محرك SMTP الخاص به يقوم بارسال رسائل تحمل الفايروس لجميع الإيميلات التي عثر عليها في الخطوة السابقة.<br />
+<br />
+وهنا ماأريد شرحه ، الرسالة التي سوف ترسل ، وهي تكون كالتالي :<br />
+From : الرسالة ترسل لأحد العناوين البريدية من القائمة التي عثر عليها ، أو مجموعة من العناوين من نفس الدودة.<br />
+Subject : موضوع الرسالة يكون متنوعة مثل:<br />
+<br />
+<br />
+Re: Encrypted Mail <br />
+Re: Extended Mail <br />
+Re: Status <br />
+Re: Notify <br />
+Re: SMTP Server <br />
+Re: Mail Server <br />
+Re: Delivery Server <br />
+Re: Bad Request <br />
+Re: Failure <br />
+Re: Thank you for delivery <br />
+Re: Test <br />
+Re: ********************istration <br />
+Re: Message Error <br />
+Re: Error <br />
+Re: Extended Mail System <br />
+Re: Secure SMTP Message <br />
+Re: Protected Mail Request <br />
+Re: Protected Mail System <br />
+Re: Protected Mail Delivery <br />
+Re: Secure delivery <br />
+Re: Delivery Protection <br />
+Re: Mail Authentification <br />
+Mail Delivery (failure &lt;spoofed address&gt;) <br />
+Re: Hello <br />
+Re: Request <br />
+Re: Order <br />
+Notice again <br />
+Fwd: Warning again <br />
+Re: List <br />
+Re: Developement <br />
+Re: Proof of concept <br />
+Re: Error in document <br />
+Re: Message <br />
+Re: Sex pictures <br />
+Re: Free porn <br />
+Re: Virus Sample <br />
+Re: Submit a Virus Sample <br />
+Re: Old photos <br />
+Re: Old times <br />
+Re: Question <br />
+Re: Sample <br />
+Re: Its me <br />
+Re: Hi <br />
+Stolen document <br />
+Private document <br />
+Re: Your document <br />
+Re: Approved document <br />
+Try this game ;-)<br />
+Body <br />
+: جمل متنوعة مبهمة محاولة لخدع الضحية.<br />
+<br />
+كما تأتي نصوص الرسالة أحياناً<br />
+<br />
+<br />
+<br />
+Important message, do not show this anyone! <br />
+Your important document, correction is finished! <br />
+The sample is attached! <br />
+I hope you accept the result! <br />
+Please answer quickly! <br />
+Please confirm! <br />
+Are you a spammer? (I found your email on a spammer website!?!) <br />
+I have visited this website and I found you in the spammer list. Is that true? <br />
+Here is my phone number. <br />
+Here is my icq list. <br />
+You have downloaded these illegal cracks?. <br />
+Do not visit this illegal websites! <br />
+Here is it! <br />
+Try this, or nothing! <br />
+Let'us be short: you have no experience in writing letters!!! <br />
+I am shocked about your document! <br />
+You cannot do that! <br />
+Shocking document <br />
+Thanks! <br />
+Thank you for your request, your details are attached! <br />
+Please answer quickly! <br />
+Please confirm! <br />
+You have written a very good text, excellent, good work! <br />
+Your photo, uahhh.... , you are naked! <br />
+Does it matter? <br />
+Do you? <br />
+Monthly news report. <br />
+Your archive is attached. <br />
+I cannot forget you! <br />
+I love you! <br />
+The sample is attached! <br />
+I hope you accept the result! <br />
+I have attached the sample. <br />
+I have corrected your document. <br />
+The file is protected with the password ghj001. <br />
+I have attached your file. Your password is jkl44563. <br />
+I cannot believe that. <br />
+I found this document about you. <br />
+I hope the patch works. <br />
+Message has been sent as a binary attachment. <br />
+Binary message is available. <br />
+I have attached it to this mail. <br />
+Can you confirm it? <br />
+Is that your password? <br />
+Protected message is attached. <br />
+Encrypted message is available. <br />
+Mail Authentication <br />
+Protected Mail System <br />
+ESMTP [Secure Mail System #334]: Secure message is attached. <br />
+Partial message is available. <br />
+Waiting for a Response. Please read the attachment. <br />
+First part of the secure mail is available. <br />
+For more details see the attachment. <br />
+For further details see the attachment. <br />
+Your requested mail has been attached. <br />
+Protected Mail System Test. <br />
+Secure Mail System Beta Test. <br />
+Forwarded message is available. <br />
+Delivered message is attached. <br />
+Encrypted message is available. <br />
+Please read the attachment to get the message. <br />
+Follow the instructions to read the message. <br />
+Please authenticate the secure message. <br />
+Protected message is attached. <br />
+Waiting for authentification. <br />
+Protected message is available. <br />
+Bad Gateway: The message has been attached. <br />
+SMTP: Please confirm the attached message. <br />
+You got a new message. <br />
+Now a new message is available. <br />
+New message is available. <br />
+You have received an extended message. Please read the instructions. <br />
+Your details. <br />
+Your document. <br />
+I have received your document. The corrected document is attached. <br />
+I have attached your document. <br />
+Your document is attached to this mail. <br />
+Authentication required. <br />
+Requested file. <br />
+See the file. <br />
+Please read the important document. <br />
+Please confirm the document. <br />
+Your file is attached. <br />
+Please read the document. <br />
+Your document is attached. <br />
+Please read the attached file! <br />
+Please see the attached file for details. <br />
+read it immediately <br />
+The file is protected with the password ghj001. <br />
+I have attached your file. Your password is jkl44563.<br />
+<br />
+أو هكذا<br />
+<br />
++++ Attachment: No Virus found<br />
++++ MessageLabs AntiVirus - www.messagelabs.com<br />
+<br />
+<br />
++++ Attachment: No Virus found<br />
++++ Bitdefender AntiVirus - www.bitdefender.com<br />
+<br />
+<br />
++++ Attachment: No Virus found<br />
++++ MC-Afee AntiVirus - www.mcafee.com<br />
+<br />
+<br />
++++ Attachment: No Virus found<br />
++++ Kaspersky AntiVirus - www.kaspersky.com<br />
+<br />
+<br />
++++ Attachment: No Virus found<br />
++++ Panda AntiVirus - www.pandasoftware.com<br />
+<br />
+<br />
+++++ Attachment: No Virus found<br />
+++++ Norman AntiVirus - www.norman.com<br />
+<br />
+<br />
+++++ Attachment: No Virus found<br />
+++++ F-Secure AntiVirus - www.f-secure.com<br />
+<br />
+<br />
+++++ Attachment: No Virus found<br />
+++++ Norton AntiVirus - www.symantec.de<br />
+<br />
+<br />
+أيضا توجد نماذج رسائل جاهزة في الفايروس مثل<br />
+<br />
+<br />
+From:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5a292f2a2a35282e1a2923373b342e3f3974393537">[email&#160;protected]</a><br />
+Subject: <br />
+<br />
+<br />
+<br />
+<br />
+Re:Virus Sample <br />
+<br />
+<br />
+Re:Submit a Virus Sample<br />
+<br />
+<br />
+<br />
+Body: <br />
+The sample file you sent contains a new virus version of buppa.k.<br />
+Please update your virus scanner with the attached dat file.<br />
+Best Regards,<br />
+Keria Reynolds<br />
+أو<br />
+The sample file you sent contains a new virus version of mydoom.j.<br />
+Please clean your system with the attached signature.<br />
+Sincerly,<br />
+Robert Ferrew<br />
+والرسالة معناها كأنك قمت بمراسلة الدعم لشركة Symantec استفسار عن فايروس ، فهذا ردهم ويقولون فيه انه يحتوي على فايروس مايدوم ويجب عليك تنظيف الجهاز باستخدام الملف المرفق. والملف المرفق عبارة عن الفايروس نفسه <br />
+<br />
+أو<br />
+<br />
+From:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3759584552475b4e7747564e47565b1954585a">[email&#160;protected]</a><br />
+Subject: <br />
+Congratulations! <br />
+Thank you!<br />
+Body: <br />
+You were registered to the pay system.<br />
+For more details see the attachment. <br />
+Your bill is attached to this mail.<br />
+<br />
+From:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4b5b6a1a7b194b3bba2fab5b7b7bba1baa0">[email&#160;protected]</a><br />
+Subject: <br />
+Internet Provider Abuse <br />
+Illegal Website<br />
+Body: <br />
+I noticed that you have visited illegal websites.<br />
+See the name in the list! <br />
+You have visited illegal websites.<br />
+I have a big list of the websites you surfed.<br />
+<br />
+From: noreply@&lt;spoofed domain&gt;<br />
+Subject: <br />
+********************istrator <br />
+Mail Account<br />
+Body: <br />
+Your mail account is expired.<br />
+See the details to reactivate it. <br />
+Your mail account has been closed.<br />
+For further details see the document.<br />
+<br />
+ويأتي المرفق عادة بإحدى هذه الأسماء<br />
+<br />
+document05 <br />
+websites03 <br />
+game_xxo <br />
+your_document <br />
+my_details <br />
+your_doc <br />
+mails9 <br />
+data20 <br />
+letter32 <br />
+priv <br />
+document43 <br />
+software <br />
+patch3425 <br />
+game <br />
+private_01 <br />
+part6 <br />
+document01 <br />
+pwd02 <br />
+all_doc01 <br />
+document04 <br />
+about_you <br />
+your_document <br />
+encrypted_msg01 <br />
+pgp_sess01<br />
+<br />
+ويأتي ملحق الملف المرفق بإحدى اللواحق التالية<br />
+<br />
+*.exe <br />
+*.pif <br />
+*.scr <br />
+*.zipويحتوي عنوان البريد القادم بأحد الأسماء التالية<br />
+<br />
+@antivi <br />
+@avp <br />
+@bitdefender <br />
+@fbi <br />
+@f-pro <br />
+@freeav <br />
+@f-secur <br />
+@kaspersky <br />
+@mcafee <br />
+@messagel <br />
+@microsof <br />
+@norman <br />
+@norton <br />
+@pandasof <br />
+@skynet <br />
+@sophos <br />
+@spam <br />
+@symantec <br />
+@viruslis <br />
+abuse@ <br />
+noreply@ <br />
+ntivir <br />
+reports@ <br />
+spam@<br />
+<br />
+الآن قمنا بتوضيح آلية عمل الفايروس<br />
+<br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d3a5e5f432308191e0614433d2d0000">[email&#160;protected]</a><br />
+<br />
+فمن الطبيعي أن تجد رسائل وصلت لأصدقائك قادمه من بريدك ، فجهاز أحد اصدقائك والذي اصيب بالفايروس هو من قام بإرسال الرسالة لأصدقائك وكأنها قادمة منك ، وكذلك سوف يرسلها لك وكأنها قادمة من صديقك أو أي بريد موجود في القائمة التي عثر عليها. وهذا يوضح سبب وجود البريد الغريب الذي يصلك ، فهذا لا يعني أن جهازك اصيب بالفايروس ، فالفايروس لا يمكن أن يعمل ويكون الجهاز مصاب الا اذا تم تشغيله ، او استخدم ثغرة امنية في نظام التشغيل كما هو التفجير Blaster.<br />
+<br />
+أرجوا أن أكون قد وضحت ولو جزء بسيط من هذا الغموض<br />
+<br />
+<br />
+<br />
+الان طريقة أنهاء الفيروس  <br />
+<br />
+مرحلة القضاء على الفيروس بشكل نهائي<br />
+اذا كان جهازك مصاب بالفايروس <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b0e783829efed5c4c3dbc99ee0f0dddd">[email&#160;protected]</a> أو أحد اصدارات نيت سكاي التالية :<br />
+<br />
+<br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b6e1858498f8d3c2c5ddcf98f4f6dbdb">[email&#160;protected]</a><br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c295f1f0ec8ca7b6b1a9bbec8182afaf">[email&#160;protected]</a> <br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0f793928eeec5d4d3cbd98ee4e0cdcd">[email&#160;protected]</a> <br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5700646579193223243c2e7912173a3a">[email&#160;protected]</a> <br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f187c7d61012a3b3c243661040f2222">[email&#160;protected]</a> <br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="055236372b4b6071766e7c2b55456868">[email&#160;protected]</a> <br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8addb9b8a4c4effef9e1f3a4dbcae7e7">[email&#160;protected]</a> <br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3a6d090814745f4e49514314697a5757">[email&#160;protected]</a> <br />
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="db8ce8e9f595beafa8b0a2f58f9bb6b6">[email&#160;protected]</a><br />
+فالطريقة سهلة ، سيمانتيك وفرت اداة حذف الفايروس من الجهاز المصاب( لهذا الفايروس فقط ) ، هذا الشرح من الدعم الفني لسيمانتيك ، على فرض أنك تستخدم نورتون ، لذلك اذا كنت تستخدم مكافي أو أي مكافح فايروسات آخر ، الأفضل أن تبحث في موقع الشركة عن كيفية حذف الفايروس هذا .<br />
+<br />
+الخطوات :<br />
+<br />
+1- حمل الملف التالي<br />
+<br />
+http://securityresponse.symantec.com/avcenter/FxNetsky.exe<br />
+حجم البرنامج 156 كيلوبايت :<br />
+<br />
+<br />
+2- أغلق جميع البرامج التي تعمل الآن.<br />
+3- اذا كنت متصل بشبكة ، أو متصل بالانترنت ، اقطع الاتصال الآن.<br />
+4- اذا كان الويندوز XP أو Me ، عطل System Restore (خطوة مهمة ).<br />
+5- شغل الملف FxNetsky.exe .<br />
+6- اضغط Start .<br />
+7- أعد تشغيل الجهاز بعد الإنتهاء.<br />
+8- شغل البرنامج مرة ثانية FxNetsky.exe .<br />
+9- اذا كان الويندوز XP أو ME ، أعد System Restore.<br />
+10- حدث النورتون في جهازك.<br />
+<br />
+----------------<br />
+<br />
+منقووووووووول</div></div><hr />
+
+
+<div id="copyright">vBulletin&reg; v3.8.7, Copyright &copy;2000-2023, TranZ by Almuhajir</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
